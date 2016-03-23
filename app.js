@@ -10,7 +10,7 @@ let router = require('koa-route');
 let render = require('koa-ejs');
 render(app, {
   root: path.join(__dirname, 'view'),
-  layout: false,
+  //layout: false,
   viewExt: 'html',
   cache: false,
   debug: true
