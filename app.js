@@ -23,6 +23,7 @@ app.use(staticFiles('public'));
 
 app.use(router.get('/', home.index));
 app.use(router.get('/production', home.production));
+app.use(router.get('/us', home.us));
 
 app.listen(3000);
 

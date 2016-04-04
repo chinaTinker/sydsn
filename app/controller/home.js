@@ -8,3 +8,7 @@ exports.index = function* (){
 exports.production = function* () {
   yield this.render('production', {active: "active"});
 };
+
+exports.us = function* () {
+  yield this.render('us', {});
+};
