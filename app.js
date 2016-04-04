@@ -22,6 +22,7 @@ let home = require('./app/controller/home.js');
 app.use(staticFiles('public'));
 
 app.use(router.get('/', home.index));
+app.use(router.get('/production', home.production));
 
 app.listen(3000);
 
