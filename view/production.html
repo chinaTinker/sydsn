@@ -5,23 +5,16 @@
         <figure>
           <header class="heading">我们的产品</header>
           <ul class="nospace clear">
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter first"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
-            <li class="one_quarter"><a href="#"><img src="../images/demo/gallery/01.png" alt=""></a></li>
+            <%for(var i = 1; i < 6; i++){%>
+              <li class="one_quarter <%=i%4==1?'first':''%>">
+                <a href="#"><img src="images/production/production<%=i%>.jpg" alt=""></a>
+              </li>
+            <%}%>
           </ul>
           <figcaption>都是我们的诚心制作</figcaption>
         </figure>
       </div>
-
+      <!--
       <nav class="pagination">
         <ul>
           <li><a href="#">&laquo; Previous</a></li>
@@ -38,6 +31,7 @@
           <li><a href="#">Next &raquo;</a></li>
         </ul>
       </nav>
+      -->
     </div>
     <div class="clear"></div>
   </main>
