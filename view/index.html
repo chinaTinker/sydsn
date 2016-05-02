@@ -68,24 +68,14 @@
         <p>我们很高兴为大家推荐以下正在热销的产品</p>
       </div>
       <ul id="testimonials" class="nospace group btmspace-80">
-        <li class="one_third first">
-          <blockquote>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</blockquote>
-          <figure><img src="images/demo/60x60.png" alt="">
-            <figcaption><strong>胶带纸1号</strong>              
+      <%for(var i = 0, len = goods.length; i < len; i++){%>
+        <li class="one_third <%=i==0?'first':''%>">
+          <blockquote><%=goods[i].desc%></blockquote>
+          <figure><img src="<%=goods[i].image%>" alt="">
+            <figcaption><strong><%=goods[i].name%></strong>              
           </figure>
         </li>
-        <li class="one_third">
-          <blockquote>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</blockquote>
-          <figure><img src="images/demo/60x60.png" alt="">
-            <figcaption><strong>胶带纸2号</strong>              
-          </figure>
-        </li>
-        <li class="one_third">
-          <blockquote>介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍介绍</blockquote>
-          <figure><img src="images/demo/60x60.png" alt="">
-            <figcaption><strong>胶带纸3号</strong>              
-          </figure>
-        </li>
+      <%}%>
       </ul>
   
       <div class="clear"></div>
