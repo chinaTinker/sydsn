@@ -1,8 +1,15 @@
 'use strict';
 
+const cases = require('../../lib/success_case');
+
 exports.index = function* (){
 	
-	yield this.render('index', {active: "active"});	
+  const data = {
+    active: 'active',
+    cases: cases()
+  };
+
+	yield this.render('index', data);	
 };
 
 exports.production = function* () {
